@@ -1,7 +1,27 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block content %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
 
-    
+{% block content %}
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-12 my-auto">
+            <h1 class="display-4 welcome-msg">
+                Want things that belonged to the Avengers?
+            </h1>
+            <div class="text-center my-5">
+                <h4>
+                    <a href="" class="btn btn-danger btn-lg">Shop Now</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
