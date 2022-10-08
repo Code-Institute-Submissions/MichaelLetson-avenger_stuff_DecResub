@@ -1,11 +1,20 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![image](https://user-images.githubusercontent.com/93741957/194701273-220700eb-bc22-4f88-95ab-5b88478a3a21.png)
 
-Welcome MichaelLetson,
+Avenger Stuff lives inside the MCU - it's purpose: "When the battlefield has cleared and the dust has settled in the aftermath of an Avenger bout, we collect Avenger's stuff so you can own an item that once belonged to the beloved Avengers!". 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This site is intended to be fun, and placed inside a make believe world of Marvel. It is to enable people to purchase items/weapons/clothing that once belonged to an Avenger. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+##User Stories: 
 
+### Understand the purpose of the site:
+This is covered in the above intro, this initial message is what is displayed to the user which clearly outlines what you can do on this site. 
+
+###Properly navigate the site:
+Created a user friendly nav bar, specfically designed for all screen sizes. 
+
+
+
+(Temporarily keeping the below during development) 
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
