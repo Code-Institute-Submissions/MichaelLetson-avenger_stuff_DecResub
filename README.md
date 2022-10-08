@@ -4,12 +4,12 @@ Avenger Stuff lives inside the MCU - it's purpose: "When the battlefield has cle
 
 This site is intended to be fun, and placed inside a make believe world of Marvel. It is to enable people to purchase items/weapons/clothing that once belonged to an Avenger. 
 
-##User Stories: 
+## User Stories: 
 
 ### Understand the purpose of the site:
 This is covered in the above intro, this initial message is what is displayed to the user which clearly outlines what you can do on this site. 
 
-###Properly navigate the site:
+### Properly navigate the site:
 Created a user friendly nav bar, specfically designed for all screen sizes. 
 
 
