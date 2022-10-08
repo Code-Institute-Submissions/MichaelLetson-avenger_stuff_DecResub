@@ -23,13 +23,15 @@ strong {
     font-weight: 900;
 }
 
+/* -------------------- Comic book style */
 .welcome-msg {
     margin: auto;
     padding: 1rem;
     text-align: center;
-    text-shadow: 0 3px 0 white;
+    text-shadow: 0 1px 0 white;
+    font-family: monospace;
     color: black;
-    background-color: rgb(246, 241, 241, 0.6);
+    background-color: rgba(233, 250, 83, 0.7);
 }
 
 /* -------------------------------- Media Queries */
