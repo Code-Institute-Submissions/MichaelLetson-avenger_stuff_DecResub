@@ -12,9 +12,18 @@ This is covered in the above intro, this initial message is what is displayed to
 ### Properly navigate the site:
 Created a user friendly nav bar, specfically designed for all screen sizes. 
 
+![image](https://user-images.githubusercontent.com/93741957/194764217-5b05a8cf-2815-4a6c-b116-c9db5f5f1ebc.png)
 
+### View all items: 
+As per above image, which highlights sound navigation, this page demonstrates the ability to view all items in the site in one place. 
+
+### Be able to Log in and out as an authenticated user: 
+![image](https://user-images.githubusercontent.com/93741957/194764385-4eb8dc9c-d1f8-4c88-a038-26e8f344db4c.png)
+
+Using Allauth, created ability to allow authenticated users to log in and out. 
 
 (Temporarily keeping the below during development) 
+
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
