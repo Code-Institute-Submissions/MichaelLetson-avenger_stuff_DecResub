@@ -40,6 +40,9 @@
             <a href=" {% url 'home' %}" class="nav-link">
               <h2 class="text-uppercase"><strong>Avenger</strong> Stuff</h2>
             </a>
+            <h2 class="col" id="discount-message">
+                10% off all orders above £100
+            </h2>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <form method="GET" action="">
@@ -103,11 +106,11 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <h2 class="col" id="discount-message">
                 10% off all orders above £100
             </h2>
-        </div>
+        </div> -->
     </header>
     
     {% if messages %}
