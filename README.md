@@ -22,7 +22,14 @@ As per above image, which highlights sound navigation, this page demonstrates th
 
 Using Allauth, created ability to allow authenticated users to log in and out. 
 
-(Temporarily keeping the below during development) 
+### Select an item for a detailed view: 
+
+![image](https://user-images.githubusercontent.com/93741957/194937749-00a71534-df86-471d-ae67-c17f79892bfb.png)
+
+Created a separate page, per item, to allow users to view that items detail.
+
+
+# (Temporarily keeping the below during development) 
 
 ## Gitpod Reminders
 
