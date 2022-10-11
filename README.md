@@ -28,6 +28,10 @@ Using Allauth, created ability to allow authenticated users to log in and out.
 
 Created a separate page, per item, to allow users to view that items detail.
 
+### Search functionality to filter products
+
+Created functionality to serach for keyword inside item name. Chose not to include descriptions into the function as Avenger names are used often in descriptions that do not directly relate to them and this would convelute and confuse the search functionality for the user. 
+
 
 # (Temporarily keeping the below during development) 
 
