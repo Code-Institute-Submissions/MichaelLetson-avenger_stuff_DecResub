@@ -32,6 +32,9 @@ Created a separate page, per item, to allow users to view that items detail.
 
 Created functionality to serach for keyword inside item name. Chose not to include descriptions into the function as Avenger names are used often in descriptions that do not directly relate to them and this would convelute and confuse the search functionality for the user. 
 
+### Filter products by category or avenger: 
+
+Added functionality to the site navigation to filter each item by either its category or it's avenger connection. 
 
 # (Temporarily keeping the below during development) 
 
