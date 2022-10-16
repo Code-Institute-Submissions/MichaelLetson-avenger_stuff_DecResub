@@ -5,9 +5,9 @@
                 All Stuff
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">Clothing</a>
-                <a href="" class="dropdown-item ">Weapons</a>
-                <a href="" class="dropdown-item ">Items</a>
+                <a href="{% url 'products' %}?category=clothing" class="dropdown-item">Clothing</a>
+                <a href="{% url 'products' %}?category=weapons" class="dropdown-item ">Weapons</a>
+                <a href="{% url 'products' %}?category=items" class="dropdown-item ">Items</a>
                 <a href=" {% url 'products' %} " class="dropdown-item">All</a>
             </div>
         </li>
@@ -17,12 +17,12 @@
                 Avenger
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Iron Man</a>
-                <a href="" class="dropdown-item">Captain America</a>
-                <a href="" class="dropdown-item">Black Widow</a>
-                <a href="" class="dropdown-item">Thor</a>
-                <a href="" class="dropdown-item">Hawkeye</a>
-                <a href="" class="dropdown-item">Hulk</a>
+                <a href="{% url 'products' %}?avenger=iron_man" class="dropdown-item">Iron Man</a>
+                <a href="{% url 'products' %}?avenger=cap_america" class="dropdown-item">Captain America</a>
+                <a href="{% url 'products' %}?avenger=black_widow" class="dropdown-item">Black Widow</a>
+                <a href="{% url 'products' %}?avenger=thor" class="dropdown-item">Thor</a>
+                <a href="{% url 'products' %}?avenger=hawkeye" class="dropdown-item">Hawkeye</a>
+                <a href="{% url 'products' %}?avenger=hulk" class="dropdown-item">Hulk</a>
             </div>
         </li>
         <li class="nav-item dropdown">
