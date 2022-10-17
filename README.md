@@ -36,6 +36,12 @@ Created functionality to serach for keyword inside item name. Chose not to inclu
 
 Added functionality to the site navigation to filter each item by either its category or it's avenger connection. 
 
+### Sort items by price
+
+![image](https://user-images.githubusercontent.com/93741957/196261762-f65db296-9f69-491f-a17d-2b30866fb6a9.png)
+
+As per above (highlighted), added functionality to allow the user to filter or sort by product price, as well as Avenger name and Category. 
+
 # (Temporarily keeping the below during development) 
 
 ## Gitpod Reminders
