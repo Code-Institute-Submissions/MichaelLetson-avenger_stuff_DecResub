@@ -27,12 +27,12 @@
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+                Filter By 
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">Category</a>
+                <a href="{% url 'products' %}?sort=avenger&direction=asc" class="dropdown-item">Avenger Name</a>
             </div>
         </li>
     </ul>
