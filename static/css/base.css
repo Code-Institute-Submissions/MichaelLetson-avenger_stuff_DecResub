@@ -35,13 +35,20 @@ strong {
     background-color: rgba(233, 250, 83, 0.7);
 }
 
-/* #discount-message {
+.btt-button {
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
     background-color: red;
     color: white;
-    text-align: center;
-    font-size: medium;
-    text-transform: uppercase;
-} */
+    font-size: x-large;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 
 #discount-message {
     color: red;
