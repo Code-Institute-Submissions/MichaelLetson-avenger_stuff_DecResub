@@ -6,6 +6,10 @@ This site is intended to be fun, and placed inside a make believe world of Marve
 
 ## User Stories: 
 
+![image](https://user-images.githubusercontent.com/93741957/197396518-d2b6ca4d-4e8a-4fb7-8db8-12ed64af368d.png)
+
+Created a file for all user stories in an excel spreadsheet, which I worked through one by one to help create functionality, this helped prepare and plan out the steps of development and helped work through an agile method also. Part way through the project I added these in Git to better help and plan my work.
+
 ### Understand the purpose of the site:
 This is covered in the above intro, this initial message is what is displayed to the user which clearly outlines what you can do on this site. 
 
