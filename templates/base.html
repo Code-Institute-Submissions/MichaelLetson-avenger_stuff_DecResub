@@ -41,7 +41,7 @@
               <h2 class="text-uppercase"><strong>Avenger</strong> Stuff</h2>
             </a>
             <h2 class="col" id="discount-message">
-                10% off all orders above £100
+                10% off all orders above £{{ discounted_delivery_threshold }}
             </h2>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -60,6 +60,19 @@
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+               <li class="list-inline-item dropdown">
+                   <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <div class="text-center">
+                           <div><i class="fas fa-solid fa-bars"></i></div>
+                           <p class="my-0">About</p>
+                       </div>
+                   </a>
+                   <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                       <a href="" class="dropdown-item">Contact Us</a>
+                       <a href="" class="dropdown-item">Newsletter</a>
+                       <a href="" class="dropdown-item">Reviews</a>
+                   </div>
+                </li>
               <li class="list-inline-item dropdown">
                   <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <div class="text-center">
@@ -81,7 +94,7 @@
                   </div>
               </li>
               <li class="list-inline-item">
-                  <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                  <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                       <div class="text-center">
                           <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                           <p class="my-0">
