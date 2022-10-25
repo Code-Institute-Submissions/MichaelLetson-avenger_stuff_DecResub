@@ -20,9 +20,7 @@
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
-                    <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}../media/no_image.PNG" alt="{{ product.name }}">
-                    </a>
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}../media/no_image.PNG" alt="{{ product.name }}">
                     {% endif %}       
                 </div>
             </div>
@@ -49,7 +47,7 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn btn-danger mt-5" value="Add to Bag">
+                            <input type="submit" class="text-uppercase btn btn-danger mt-5" value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>

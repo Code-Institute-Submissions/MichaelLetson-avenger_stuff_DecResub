@@ -67,6 +67,10 @@ strong {
 	z-index: -1;
 }
 
+.text-info {
+    color: green!important;
+}
+
 /* -------------------------------- Product Detail */
 
 .product-details-container {
