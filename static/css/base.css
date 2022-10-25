@@ -35,6 +35,13 @@ strong {
     background-color: rgba(233, 250, 83, 0.7);
 }
 
+/* ----------------------------- Buttons */
+
+.btn {
+    background-color: red;
+    color: white;
+}
+
 .btt-button {
     height: 5rem;
     width: 5rem;
