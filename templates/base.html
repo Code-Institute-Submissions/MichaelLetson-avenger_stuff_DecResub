@@ -16,6 +16,7 @@
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     {% endblock %}
 
     {% block extra_css %}
@@ -68,9 +69,10 @@
                        </div>
                    </a>
                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                       <a href="" class="dropdown-item">Contact Us</a>
+                       <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
                        <a href="" class="dropdown-item">Newsletter</a>
                        <a href="" class="dropdown-item">Reviews</a>
+                       <a href="{% url 'about' %}" class="dropdown-item">All</a>
                    </div>
                 </li>
               <li class="list-inline-item dropdown">

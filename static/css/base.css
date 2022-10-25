@@ -20,10 +20,6 @@ a {
     text-transform: uppercase;
 }
 
-strong {
-    font-weight: 900;
-}
-
 /* -------------------- Comic book style */
 .comic-book-text {
     margin: auto;
@@ -55,6 +51,12 @@ strong {
 
 .btt-link {
     cursor: pointer;
+}
+
+.about-link {
+    height: 100%;
+    font-size: xx-large;
+    padding-top: 10rem;
 }
 
 #discount-message {
