@@ -20,6 +20,13 @@ a {
     text-transform: uppercase;
 }
 
+.review {
+    background-color: lightgreen;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* -------------------- Comic book style */
 .comic-book-text {
     margin: auto;

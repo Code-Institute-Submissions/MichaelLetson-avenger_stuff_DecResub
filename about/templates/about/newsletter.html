@@ -11,6 +11,8 @@
 
 {% block content %}
 
+{% if user.is_authenticated %}
+
 <div class="overlay"></div>
 
 {% if messages %}
@@ -50,4 +52,16 @@
         <button type="submit" class="btn">Submit</button>
     </form>
 </div>
+
+{% else %}
+
+<br>
+<div class="row text-center mt-9">
+    <div class="col-8 comic-book-text" style="font-size: xx-large;">
+        <p>You must be a member subcribe to our newsletter to keep updated with the latest on all things Avengers. Please <a href="{% url 'account_signup' %}">Register</a> or <a href="{% url 'account_login' %}">Login</a></p>
+    </div>
+</div>
+
+{% endif %}
+
 {% endblock %}

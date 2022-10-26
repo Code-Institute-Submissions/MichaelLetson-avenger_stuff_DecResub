@@ -46,5 +46,30 @@ def newsletter(request):
 
 def review(request):
     """ View to return page for users to leave a review """
+    model = Review
+    queryset = Review.objects.all()
+    reviews = queryset.order_by("-created_on")
 
-    return render(request, 'about/review.html')
+    if request.method == 'POST':
+        reviewform = Review()
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        body = request.POST.get('body')
+        reviewform.name = name
+        reviewform.email = email
+        reviewform.body = body
+        reviewform.save()
+        messages.success(
+            request, (
+                'Your review has been posted and will appear below!'
+                )
+            )
+        return render(request, 'about/review.html', {'reviews': reviews, })
+
+    return render(
+        request, 
+        'about/review.html',
+        {
+            'reviews': reviews,
+            }
+        )
