@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import Contact, Newsletter
+from .models import Contact, Newsletter, Review
 
 # Create your views here.
 
@@ -43,3 +43,8 @@ def newsletter(request):
         return render(request, 'about/newsletter.html')
 
     return render(request, 'about/newsletter.html')
+
+def review(request):
+    """ View to return page for users to leave a review """
+
+    return render(request, 'about/review.html')
