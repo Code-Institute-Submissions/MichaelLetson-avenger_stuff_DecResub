@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import Contact
+from .models import Contact, Newsletter
 
 # Create your views here.
 
@@ -21,7 +21,7 @@ def contact_us(request):
         contact.email = email
         contact.body = body
         contact.save()
-        messages.success(request, f'Thanks, message received!')
+        messages.success(request, ('Thanks, message received!'))
         return render(request, 'about/contact_us.html')
 
     return render(request, 'about/contact_us.html')
@@ -29,15 +29,17 @@ def contact_us(request):
 def newsletter(request):
     """ View to return newsletter page and subscription form """
     if request.method == 'POST':
-        form = NewsletterForm()
+        newsletterform = Newsletter()
         name = request.POST.get('name')
         email = request.POST.get('email')
         address = request.POST.get('address')
-        contact.name = name
-        contact.email = email
-        contact.address = address
-        contact.save()
-        messages.success(request, f'Thanks, message received!')
+        newsletterform.name = name
+        newsletterform.email = email
+        newsletterform.address = address
+        newsletterform.save()
+        messages.success(
+            request, ('You are now listed to receive the monthly newsletter!')
+            )
         return render(request, 'about/newsletter.html')
 
     return render(request, 'about/newsletter.html')
