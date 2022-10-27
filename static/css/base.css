@@ -40,9 +40,24 @@ a {
 
 /* ----------------------------- Buttons */
 
+.remove-item {
+    color: red!important;
+}
+
+.remove-item:hover {
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .btn {
     background-color: red;
     color: white;
+}
+
+.sm-btn {
+    font-size: small;
+    padding: 2px;
 }
 
 .btt-button {

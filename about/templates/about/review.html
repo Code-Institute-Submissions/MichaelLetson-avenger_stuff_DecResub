@@ -19,9 +19,9 @@
     {% for message in messages %}
     <div class="container">
         <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2 alert alert-success" role="alert">
-            {{ message }}
-        </div>
+            <div class="col-md-8 mt-3 offset-md-2 alert alert-success" role="alert">
+                {{ message }}
+            </div>
         </div>
     </div>
     {% endfor %}
@@ -37,7 +37,7 @@
 </div>
 
 <div class="row m-2 p-5">
-    <div class='col-3'>
+    <div class='col-md-3 col-sm-12 mb-3'>
         <h4>Leave a review:</h4>
         <form class="col-12 w-100" method='POST'>
             {% csrf_token %}
@@ -56,8 +56,8 @@
             <button type="submit" class="btn">Submit</button>
         </form>
     </div>
-
-    <div class="col-9">
+    <br>
+    <div class="col-md-7 col-sm-12">
         {% for review in reviews %}
             <div class="review">
                 <p class="font-weight-bold">
@@ -67,6 +67,9 @@
                     </span> wrote:
                 </p>
                 {{ review.body | linebreaks }}
+                {% if request.user.is_superuser %}
+                <button type="button" class="btn sm-btn"><a style="color: white;" href="{% url 'delete_review' review.id %}">Unsend</a></button>
+                {% endif %}
             </div>
         {% endfor %}
     </div>

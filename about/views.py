@@ -73,3 +73,11 @@ def review(request):
             'reviews': reviews,
             }
         )
+
+def delete_review(request, review_id=None):
+    model = Review
+    review_to_delete = Review.objects.get(id=review_id)
+    review_to_delete.delete()
+    messages.success(request, ('Review successfully deleted!'))
+
+    return redirect('review')

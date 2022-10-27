@@ -10,6 +10,17 @@
 {% endblock %}
 
 {% block content %}
+{% if messages %}
+    {% for message in messages %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mt-3 offset-md-2 alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endif %}
 <div class="container h-100">
     <div class="row h-100">
         <div class="col-12 my-auto">
