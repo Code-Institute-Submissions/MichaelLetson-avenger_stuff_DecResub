@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Avenger
+from .forms import ProductForm
 
 # Create your views here.
 def all_products(request):
@@ -76,3 +77,18 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def product_form(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request,
+                ('Successfully added! Return to products page to view it.')
+                )
+            return render(request, 'products/product_form.html', {'form': form, },)
+    else:
+        form = ProductForm
+    return render(request, 'products/product_form.html', {"form": form, },)

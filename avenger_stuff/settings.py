@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,15 +26,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+# SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['avenger-stuff.herokuapp.com', 'localhost']
-
-
 # Application definition
+
+CSRF_TRUSTED_ORIGINS = ['http://avenger-stuff.herokuapp.com', 'http://localhost', 'https://8000-michaellets-avengerstuf-e405wrxjkm9.ws-eu73.gitpod.io']
+ALLOWED_HOSTS = ['avenger-stuff.herokuapp.com', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
