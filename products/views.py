@@ -5,7 +5,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Avenger
 from .forms import ProductForm
 
-# Create your views here.
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -88,7 +88,9 @@ def product_form(request):
                 request,
                 ('Successfully added! Return to products page to view it.')
                 )
-            return render(request, 'products/product_form.html', {'form': form, },)
+            return render(
+                request, 'products/product_form.html', {'form': form, },
+                )
     else:
         form = ProductForm
     return render(request, 'products/product_form.html', {"form": form, },)
