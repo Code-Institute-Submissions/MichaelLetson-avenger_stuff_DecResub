@@ -1,5 +1,5 @@
 from django.db import models
-
+from autoslug import AutoSlugField
 
 class Category(models.Model):
 

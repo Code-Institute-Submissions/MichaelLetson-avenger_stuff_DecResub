@@ -14,11 +14,11 @@ class ProductForm(forms.ModelForm):
             )
 
         labels = {
-            'category': '',
-            'avenger': '',
-            'name': '',
-            'description': '',
-            'price': '',
+            'category': 'Category',
+            'avenger': 'Avenger',
+            'name': 'Name',
+            'description': 'Description',
+            'price': 'Price',
         }
 
         widgets = {

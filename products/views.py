@@ -86,7 +86,7 @@ def product_form(request):
             form.save()
             messages.success(
                 request,
-                ('Successfully added! Return to products page to view it.')
+                ('Successful! View product in products list')
                 )
             return render(
                 request, 'products/product_form.html', {'form': form, },
@@ -94,3 +94,30 @@ def product_form(request):
     else:
         form = ProductForm
     return render(request, 'products/product_form.html', {"form": form, },)
+
+
+def edit_product(request, pk):
+    product = Product.objects.get(id=pk)
+
+    form = ProductForm(instance=product)
+
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request, ('Successful! View product in products list.')
+                )
+            return redirect('products')
+
+    context = {'form': form}
+    return render(request, 'products/product_form.html', context)
+
+
+def delete_product(request, pk):
+    product = Product.objects.get(id=pk)
+    product.delete()
+    messages.success(
+                request, ('Successful! Item deleted.')
+                )
+    return redirect('products')
