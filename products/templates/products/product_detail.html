@@ -57,7 +57,11 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
+                            {% if user.is_authenticated %}
                             <input type="submit" class="text-uppercase btn btn-danger mt-5" value="Add to Bag">
+                            {% else %}
+                            <p class="small mt-1">You must be signed in to purchase this item.</p>
+                            {% endif %}
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>

@@ -21,11 +21,12 @@ def bag_contents(request):
         })
 
     if total < settings.DISCOUNT_THRESHOLD:
-        delivery = total * Decimal(settings.STANDARD_PERCENTAGE / 100)
         discount_delta = settings.DISCOUNT_THRESHOLD - total
+        delivery = total * Decimal(settings.STANDARD_PERCENTAGE / 100)
     else:
-        delivery = 0
         discount_delta = 0
+        total = total * Decimal(0.9)
+        delivery = total * Decimal(settings.STANDARD_PERCENTAGE / 100)
 
     grand_total = delivery + total
 
