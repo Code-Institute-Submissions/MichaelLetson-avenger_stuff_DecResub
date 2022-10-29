@@ -46,10 +46,10 @@ class Order(models.Model):
                 'lineitem_total__sum'
                 ]
         if self.order_total < settings.DISCOUNT_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_PERCENTAGE / 100 # noqa
+            self.delivery_cost = self.order_total * settings.STANDARD_PERCENTAGE / 100  # noqa
         else:
-            self.delivery_cost = 0
-            self.order_total = self.order_total * settings.STANDARD_PERCENTAGE / 100 # noqa
+            self.delivery_cost = self.order_total * settings.STANDARD_PERCENTAGE / 100  # noqa
+            self.order_total = self.order_total * decimal(0.9)
         self.grand_total = self.order_total + self.delivery_cost
         self.save()
 
