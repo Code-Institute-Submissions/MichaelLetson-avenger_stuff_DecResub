@@ -4,10 +4,12 @@ from .models import Contact, Newsletter, Review
 
 # Create your views here.
 
+
 def about(request):
     """ View to return about page """
 
     return render(request, 'about/about.html')
+
 
 def contact_us(request):
     """ View to return contact us page and contact us form """
@@ -26,6 +28,7 @@ def contact_us(request):
 
     return render(request, 'about/contact_us.html')
 
+
 def newsletter(request):
     """ View to return newsletter page and subscription form """
     if request.method == 'POST':
@@ -43,6 +46,7 @@ def newsletter(request):
         return render(request, 'about/newsletter.html')
 
     return render(request, 'about/newsletter.html')
+
 
 def review(request):
     """ View to return page for users to leave a review """
@@ -73,6 +77,7 @@ def review(request):
             'reviews': reviews,
             }
         )
+
 
 def delete_review(request, review_id=None):
     model = Review
