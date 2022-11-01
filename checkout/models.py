@@ -3,6 +3,7 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
+from decimal import Decimal
 
 from products.models import Product
 
@@ -44,12 +45,12 @@ class Order(models.Model):
             Sum('lineitem_total')
             )[
                 'lineitem_total__sum'
-                ]
+                ] or 0
         if self.order_total < settings.DISCOUNT_THRESHOLD:
             self.delivery_cost = self.order_total * settings.STANDARD_PERCENTAGE / 100  # noqa
         else:
+            self.order_total = self.order_total * Decimal(0.9)
             self.delivery_cost = self.order_total * settings.STANDARD_PERCENTAGE / 100  # noqa
-            self.order_total = self.order_total * decimal(0.9)
         self.grand_total = self.order_total + self.delivery_cost
         self.save()
 
@@ -67,10 +68,10 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
-    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
-    product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')  # noqa
+    product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)  # noqa
     quantity = models.IntegerField(null=False, blank=False, default=0)
-    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)  # noqa
 
     def save(self, *args, **kwargs):
         """
