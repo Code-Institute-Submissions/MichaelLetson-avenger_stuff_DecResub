@@ -140,11 +140,39 @@ a {
 
 @media (max-width: 991px) {
     .header-container {
-    padding-top: 116px;
+    padding-top: 150px;
     }
 
     body {
-    height: calc(100vh - 116px);
+    height: calc(100vh - 150px);
+    font-size: small;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    h2, h3 {
+        font-size: small;
+    }
+}
+
+@media (max-width: 390px) {
+    .header-container {
+    padding-top: 150px;
+    }
+
+    body {
+    height: calc(100vh - 150px);
+    font-size: small;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    h2, h3 {
+        font-size: small;
     }
 }
 
