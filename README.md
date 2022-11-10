@@ -10,6 +10,10 @@ This site is intended to be fun, and placed inside a make believe world of Marve
 
 Created a file for all user stories in an excel spreadsheet, which I worked through one by one to help create functionality, this helped prepare and plan out the steps of development and helped work through an agile method also. Part way through the project I added these in Git to better help and plan my work.
 
+Then further created a file in Projects to work in an Agile way and follow proper structure when developing elements and functionality across the site: 
+
+![image](https://user-images.githubusercontent.com/93741957/201072183-5fae37f9-fd90-46bd-9d68-2b6af0cb4f46.png)
+
 ### Understand the purpose of the site:
 This is covered in the above intro, this initial message is what is displayed to the user which clearly outlines what you can do on this site. 
 
@@ -45,6 +49,30 @@ Added functionality to the site navigation to filter each item by either its cat
 ![image](https://user-images.githubusercontent.com/93741957/196261762-f65db296-9f69-491f-a17d-2b30866fb6a9.png)
 
 As per above (highlighted), added functionality to allow the user to filter or sort by product price, as well as Avenger name and Category. 
+
+### add and edit items via bag 
+
+This acculminates a few user stories of being able to add items to the bag, viewing the bag and also being able to edit those items i.e. remove. 
+
+### Purchasing
+
+For the ability to purchase items in the bag and to complete the Ecommerce aspect of this site, I implemented and installed Stripe. This is to allow users to input payment details, alongside their personal details and address to enable functionality to properly purchase their selected items. 
+
+### Add/Edit/Delete items
+
+Any superuser, or site owner can have full functionality to add, edit and delete items from the database via the front end. Though, anyone can upload an item found in the aftermath of an Avenger bout! I chose to have the full functionality limited to superusers and site owners to stop the possibilty of anyone deleting other peoples work or products. 
+
+### Sign up to a newsletter
+
+There is an option in the About section to sign up for a newsletter, which requires simple information from a user. This would be stored in the database ready for newsletter release by the site admin. 
+
+### Able to contact the site owner via contact us page 
+
+Implemented a simple section in the About section of the site, to allow users to contact the site owners, this is generic for a reason, to allow ease and simplicity for all issues or reasons a person may need to contact the site admin/owner. 
+
+### Post a review 
+
+Implemented an area in the About section to allow for a community feel of communication on the site directly, this is mainly for people to post their reviews on the items they have purchased, or related topics. Though it is kept relaxed and flexible to try and encourage a forum styled area for people to come and join the conversation of all things related to the Avengers and their "Stuff" - this encourages people to get involved, stay involved and ultimately spend more time on the site which will promote purchases and/or people to go and find items to post on the site. 
 
 # (Temporarily keeping the below during development) 
 
