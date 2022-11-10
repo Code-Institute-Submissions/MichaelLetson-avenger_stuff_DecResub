@@ -4,6 +4,18 @@ Avenger Stuff lives inside the MCU - it's purpose: "When the battlefield has cle
 
 This site is intended to be fun, and placed inside a make believe world of Marvel. It is to enable people to purchase items/weapons/clothing that once belonged to an Avenger. 
 
+## Colour Scheme: 
+
+In line with the Avengers logo and Marvel, I went for a clean Red and White scheme, which is persistent throughout the site. 
+
+## Stuggles: 
+
+The main struggle was the amount of moving pieces and keeping on top of all the interconnection between apps, AWS, Stripe etc. was difficult finding the needle in a hay stack when there was a bug. 
+
+## Future Expansion: 
+
+The site has good foundations to be built upon. As it is set in a fake reality, it could build relationships with Avengers to offer services rather than just products i.e. have Captin America be a dinner speaker for an evening. There is also scope to build upon the Reviews section, to expand this into a wider community forum to allow people to connect and communicate with one and other. It could be developed further from a UI/UX perspectice to allow authors of their own products to edit or remove items without the need to contact the site admin. 
+
 ## User Stories: 
 
 ![image](https://user-images.githubusercontent.com/93741957/197396518-d2b6ca4d-4e8a-4fb7-8db8-12ed64af368d.png)
