@@ -16,7 +16,7 @@
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css">
     {% endblock %}
 
     {% block extra_css %}
@@ -64,24 +64,24 @@
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                 <li class="list-inline-item dropdown">
-                    <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="text-black nav-link" href="#" id="nav-new-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-solid fa-plus"></i></div>
                             <p class="my-0">New</p>
                         </div>
                     </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    <div class="dropdown-menu border-0" aria-labelledby="nav-new-item">
                         <a href="{% url 'product_form' %}" class="dropdown-item">Add item</a>
                     </div>
                  </li>
                <li class="list-inline-item dropdown">
-                   <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <a class="text-black nav-link" href="#" id="nav-about" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        <div class="text-center">
                            <div><i class="fas fa-solid fa-bars"></i></div>
                            <p class="my-0">About</p>
                        </div>
                    </a>
-                   <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                   <div class="dropdown-menu border-0" aria-labelledby="nav-about">
                        <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
                        <a href="{% url 'newsletter' %}" class="dropdown-item">Newsletter</a>
                        <a href="{% url 'review' %}" class="dropdown-item">Reviews</a>
