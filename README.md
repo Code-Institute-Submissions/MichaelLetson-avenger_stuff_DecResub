@@ -100,7 +100,14 @@ Passed through https://validator.w3.org/ without error as per below:
 
 ### Browser
 
-The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Modzilla - all work correctly. 
+The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Modzilla - all work correctly.
+
+### Lighthouse Report
+
+![image](https://user-images.githubusercontent.com/93741957/201134083-45eb19fc-8eb7-4b55-9072-8751cb1b065d.png)
+
+The results of this report are quite average, but after review, found that some of the issues bringing it down seemed off, one example being <li> elements not being wrapped in <ul> and the nav elements were highlighted, but as per the code, you can see that they are...I was stumped with this and was not sure how to rectify this. I thought that the report was not bad enough to warrant lots of investigation to resolve this. 
+
 
 # (Temporarily keeping the below during development) 
 
