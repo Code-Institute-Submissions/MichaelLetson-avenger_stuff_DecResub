@@ -12,6 +12,10 @@ In line with the Avengers logo and Marvel, I went for a clean Red and White sche
 
 The main struggle was the amount of moving pieces and keeping on top of all the interconnection between apps, AWS, Stripe etc. was difficult finding the needle in a hay stack when there was a bug. 
 
+One main issue was an issue with a csrf token in allauth templates, this took a lot of hours to debug to find out that there was a random input field generating the same recursive token number which, for Django, was causing a security risk and was spitting out an error. 
+
+Another struggle I had was with AWS setup, there were lots of steps and I may have missed a step or two and had to redo the whole process to rectify the problem, which was the static files not loading into the bucket in AWS. 
+
 ## Future Expansion: 
 
 The site has good foundations to be built upon. As it is set in a fake reality, it could build relationships with Avengers to offer services rather than just products i.e. have Captin America be a dinner speaker for an evening. There is also scope to build upon the Reviews section, to expand this into a wider community forum to allow people to connect and communicate with one and other. It could be developed further from a UI/UX perspectice to allow authors of their own products to edit or remove items without the need to contact the site admin. 
@@ -108,7 +112,7 @@ The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Mo
 
 The results of this report are quite average, but after review, found that some of the issues bringing it down seemed off, one example being <li> elements not being wrapped in <ul> and the nav elements were highlighted, but as per the code, you can see that they are...I was stumped with this and was not sure how to rectify this. I thought that the report was not bad enough to warrant lots of investigation to resolve this. 
 
-## Deployment 
+## Deployment:
 
 This project was deployed via Heroku.
 
@@ -117,11 +121,14 @@ This project was deployed via Heroku.
 - Link Heroku to Git repository.
 - Deployed.
 
-## Using Git 
+## Using Git: 
 
 I created a respository and opened in gitpod to create my code. To move my code from gitpod to repository ready for deployment I followed these steps (which I did often to show a journey of creating my site):
 
 - git add .
 - git commit -m "message"
 - git push
+  
+## Resources: 
 
+For resources not mentioned above, I used Slack, Google, YouTube, Code Institute walkthrough videos and tutoring as well as relate tech stack documentation. All to help with developing and debugging across the site.
