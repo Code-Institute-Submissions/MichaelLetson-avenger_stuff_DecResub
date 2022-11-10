@@ -86,6 +86,22 @@ Implemented a simple section in the About section of the site, to allow users to
 
 Implemented an area in the About section to allow for a community feel of communication on the site directly, this is mainly for people to post their reviews on the items they have purchased, or related topics. Though it is kept relaxed and flexible to try and encourage a forum styled area for people to come and join the conversation of all things related to the Avengers and their "Stuff" - this encourages people to get involved, stay involved and ultimately spend more time on the site which will promote purchases and/or people to go and find items to post on the site. 
 
+## Testing: 
+
+### Python
+
+Passed through https://extendsclass.com/python-tester.html (online validator) as PEP8 was not working online at the time of testing. This passed with no errors. 
+
+### HTML and CSS
+
+Passed through https://validator.w3.org/ without error as per below: 
+
+![image](https://user-images.githubusercontent.com/93741957/201132204-00ce9e38-d66f-4e1a-8763-92346a67004b.png)
+
+### Browser
+
+The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Modzilla - all work correctly. 
+
 # (Temporarily keeping the below during development) 
 
 ## Gitpod Reminders
