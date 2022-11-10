@@ -4,6 +4,8 @@ Avenger Stuff lives inside the MCU - it's purpose: "When the battlefield has cle
 
 This site is intended to be fun, and placed inside a make believe world of Marvel. It is to enable people to purchase items/weapons/clothing that once belonged to an Avenger. 
 
+Functionality and accessibilty varied dependant on regular user, authenticated user and superuser. There is a difference, to try and entice people to become a user and join in conversations and have more access in the site. While having a superuser with full access and some access others don't to try and uphold good security (though this is something I feel could be developed further for better relevance and user experience too - for example, an author being able to edit their own product without the help of the superuser/site owner.
+
 ## Colour Scheme: 
 
 In line with the Avengers logo and Marvel, I went for a clean Red and White scheme, which is persistent throughout the site. 
@@ -110,7 +112,7 @@ The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Mo
 
 ![image](https://user-images.githubusercontent.com/93741957/201134083-45eb19fc-8eb7-4b55-9072-8751cb1b065d.png)
 
-The results of this report are quite average, but after review, found that some of the issues bringing it down seemed off, one example being <li> elements not being wrapped in <ul> and the nav elements were highlighted, but as per the code, you can see that they are...I was stumped with this and was not sure how to rectify this. I thought that the report was not bad enough to warrant lots of investigation to resolve this. 
+The results of this report are quite average, but after review, found that some of the issues bringing it down seemed off, one example being li elements not being wrapped in ul and the nav elements were highlighted, but as per the code, you can see that they are...I was stumped with this and was not sure how to rectify this. I thought that the report was not bad enough to warrant lots of investigation to resolve this
 
 ## Deployment:
 
@@ -132,3 +134,10 @@ I created a respository and opened in gitpod to create my code. To move my code 
 ## Resources: 
 
 For resources not mentioned above, I used Slack, Google, YouTube, Code Institute walkthrough videos and tutoring as well as relate tech stack documentation. All to help with developing and debugging across the site.
+
+## SEO
+
+I was careful throughout the whole project to include good language that was inline with what a Google Rater would perceive a good site. I was mindful to not over do it and make all the information relevant and concise. 
+
+I included a robots.txt and sitemap.xml files to ensure compliance and demonstration of awareness around this particular topic and practice. 
+
