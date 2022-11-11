@@ -125,7 +125,7 @@ As per the requiremnets of the course, I created the below error page, keeping i
 This project was deployed via Heroku.
 
 - Login to Heroku account on app.
-- Set buildbacks to Django and Cloudinary. 
+- Set buildbacks to Django and AWS. 
 - Link Heroku to Git repository.
 - Deployed.
 
