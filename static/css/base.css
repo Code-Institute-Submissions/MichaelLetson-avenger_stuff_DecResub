@@ -168,11 +168,11 @@ a {
     }
 
     h1 {
-        font-size: medium;
+        font-size: medium!important;
     }
 
-    h2, h3 {
-        font-size: small;
+    h2, h3, h4, a {
+        font-size: small!important;
     }
 }
 
