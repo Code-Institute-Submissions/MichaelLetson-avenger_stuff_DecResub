@@ -34,7 +34,11 @@ DEBUG = False
 
 # Application definition
 
-CSRF_TRUSTED_ORIGINS = ['http://avenger-stuff.herokuapp.com', 'http://localhost', 'https://8000-michaellets-avengerstuf-e405wrxjkm9.ws-eu74.gitpod.io']
+CSRF_TRUSTED_ORIGINS = [
+    'http://avenger-stuff.herokuapp.com',
+    'http://localhost',
+    'https://8000-michaellets-avengerstuf-e405wrxjkm9.ws-eu74.gitpod.io'
+    ]
 ALLOWED_HOSTS = ['avenger-stuff.herokuapp.com', 'localhost']
 
 INSTALLED_APPS = [
