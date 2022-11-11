@@ -114,6 +114,12 @@ The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Mo
 
 The results of this report are quite average, but after review, found that some of the issues bringing it down seemed off, one example being li elements not being wrapped in ul and the nav elements were highlighted, but as per the code, you can see that they are...I was stumped with this and was not sure how to rectify this. I thought that the report was not bad enough to warrant lots of investigation to resolve this
 
+## 404 Custom Error Page
+
+As per the requiremnets of the course, I created the below error page, keeping in sync with the sites look and feel. 
+
+![image](https://user-images.githubusercontent.com/93741957/201349258-1346abb1-0986-4b27-86f6-6d12af25cfcd.png)
+
 ## Deployment:
 
 This project was deployed via Heroku.
