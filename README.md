@@ -38,6 +38,9 @@ The generic form pages I did not create templates for, as they were VERY basic a
 
 This is in development stage of creating a business page for the Avenger Stuff site. With the consistency of the intro message in there. The final step was simply just uploading the Avenger background and logo. 
 
+Final page: 
+![image](https://user-images.githubusercontent.com/93741957/201725392-fadd2e3d-e04b-4082-8987-524e2da31367.png)
+
 ## User Stories: 
 
 ![image](https://user-images.githubusercontent.com/93741957/197396518-d2b6ca4d-4e8a-4fb7-8db8-12ed64af368d.png)
