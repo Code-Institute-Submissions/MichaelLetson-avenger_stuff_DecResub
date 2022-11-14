@@ -116,7 +116,7 @@ The results of this report are quite average, but after review, found that some 
 
 ## 404 Custom Error Page
 
-As per the requiremnets of the course, I created the below error page, keeping in sync with the sites look and feel. 
+As per the requirements of the course, I created the below error page, keeping in sync with the sites look and feel. 
 
 ![image](https://user-images.githubusercontent.com/93741957/201349258-1346abb1-0986-4b27-86f6-6d12af25cfcd.png)
 
