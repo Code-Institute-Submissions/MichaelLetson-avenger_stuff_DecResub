@@ -20,7 +20,17 @@ Another struggle I had was with AWS setup, there were lots of steps and I may ha
 
 ## Future Expansion: 
 
-The site has good foundations to be built upon. As it is set in a fake reality, it could build relationships with Avengers to offer services rather than just products i.e. have Captin America be a dinner speaker for an evening. There is also scope to build upon the Reviews section, to expand this into a wider community forum to allow people to connect and communicate with one and other. It could be developed further from a UI/UX perspectice to allow authors of their own products to edit or remove items without the need to contact the site admin. 
+The site has good foundations to be built upon. As it is set in a fake reality, it could build relationships with Avengers to offer services rather than just products i.e. have Captin America be a dinner speaker for an evening. There is also scope to build upon the Reviews section, to expand this into a wider community forum to allow people to connect and communicate with one and other. It could be developed further from a UI/UX perspectice to allow authors of their own products to edit or remove items without the need to contact the site admin.
+
+## Development 
+
+### Blueprint for site: 
+
+![image](https://user-images.githubusercontent.com/93741957/201719199-3f63fb3b-dfe6-4363-867a-c4c4e232767a.png)
+
+I used Balsamiq to create each template for the key pages: Home, Products Page, Mobile view...
+
+The generic form pages I did not create templates for, as they were VERY basic and did not require the extra time it would take to create the templates for them. 
 
 ## User Stories: 
 
