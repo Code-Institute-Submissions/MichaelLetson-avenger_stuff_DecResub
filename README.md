@@ -166,3 +166,7 @@ I was careful throughout the whole project to include good language that was inl
 
 I included a robots.txt and sitemap.xml files to ensure compliance and demonstration of awareness around this particular topic and practice. 
 
+## Head Tags
+
+All meta tags and head content was typed up to best practices, checked via multiple sites, a concise one being https://www.searchenginejournal.com/important-tags-seo/156440/ 
+
