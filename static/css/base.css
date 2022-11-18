@@ -164,7 +164,7 @@ a {
 
     body {
     height: calc(100vh - 150px);
-    font-size: small;
+    font-size: small!important;
     }
 
     h1 {
