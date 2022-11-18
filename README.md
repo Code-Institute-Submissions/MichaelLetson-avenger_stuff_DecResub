@@ -139,6 +139,17 @@ As per the requirements of the course, I created the below error page, keeping i
 
 ![image](https://user-images.githubusercontent.com/93741957/201349258-1346abb1-0986-4b27-86f6-6d12af25cfcd.png)
 
+## Site development: 
+
+To confirm the site during development and in deployment, both look as they should, as per the below. 
+
+Development: 
+![image](https://user-images.githubusercontent.com/93741957/202790073-701d78c2-bc1f-44fd-9764-b67679b20c31.png)
+
+Deployment: 
+![image](https://user-images.githubusercontent.com/93741957/202790175-9e3dc0d8-6f26-4c08-9cb2-603e4113b088.png)
+
+
 ## Deployment:
 
 This project was deployed via Heroku.
