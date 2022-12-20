@@ -27,15 +27,15 @@
     {% endfor %}
 {% endif %}
 
-<div class="col-12 m-5">
+<div class="col-12 m-1 m-md-5">
     <h3>Newsletter - Sign Up!</h3>
     <br>
     <p>Hear about new things we find and add to the website to be the first to grab cool <strong>AVENGER</strong> STUFF</p>
     <p>It's at no extra cost, we just need your details below:</p>
 </div>
 
-<div class='col-12 m-5'>
-    <form class="col-12 w-50" method='POST'>
+<div class='col-12 m-1 pb-2 m-md-5'>
+    <form class="col-12 w-75" method='POST'>
         {% csrf_token %}
         <div class="form-group">
         <input name='name' type="text" class="form-control" placeholder="Name" required>

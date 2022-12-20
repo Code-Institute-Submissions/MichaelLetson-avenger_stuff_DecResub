@@ -24,13 +24,13 @@
     {% endfor %}
 {% endif %}
 
-<div class="col-12 m-5">
+<div class="col-12 m-1 m-md-5">
     <h3>Want to contact us about something?</h3>
     <p>Write out a message here and send it off to us, if we need to respond to a query, we will respond to the email provided.</p>
 </div>
 
-<div class='col-12 m-5'>
-    <form class="col-12 w-50" method='POST'>
+<div class='col-12 m-1 m-md-5'>
+    <form class="col-12 w-75" method='POST'>
         {% csrf_token %}
         <div class="form-group">
         <input name='name' type="text" class="form-control" placeholder="Name" required>
