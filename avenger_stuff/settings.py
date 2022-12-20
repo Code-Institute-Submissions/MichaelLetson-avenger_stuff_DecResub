@@ -30,14 +30,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Application definition
 
 CSRF_TRUSTED_ORIGINS = [
     'http://avenger-stuff.herokuapp.com',
     'http://localhost',
-    'https://8000-michaellets-avengerstuf-e405wrxjkm9.ws-eu74.gitpod.io'
+    'https://8000-michaellets-avengerstuf-e405wrxjkm9.ws-eu79.gitpod.io'
     ]
 ALLOWED_HOSTS = ['avenger-stuff.herokuapp.com', 'localhost']
 

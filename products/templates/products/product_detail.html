@@ -36,7 +36,7 @@
                         </a>
                     </p>
                     {% endif %}
-                    {% if request.user.is_superuser %}
+                    {% if request.user.is_authenticated %}
                     <p class="small mt-1 mb-0">
                         <a href="{% url 'edit_product' product.id %}">
                             edit

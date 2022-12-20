@@ -1,13 +1,16 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def view_bag(request):
     """ View to return bag page to view items currently stored there """
 
     return render(request, 'bag/bag.html')
 
 
+@login_required
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
@@ -21,6 +24,7 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
 
 
+@login_required
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
     try:

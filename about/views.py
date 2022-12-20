@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Contact, Newsletter, Review
 
 # Create your views here.
@@ -29,6 +30,7 @@ def contact_us(request):
     return render(request, 'about/contact_us.html')
 
 
+@login_required
 def newsletter(request):
     """ View to return newsletter page and subscription form """
     if request.method == 'POST':
