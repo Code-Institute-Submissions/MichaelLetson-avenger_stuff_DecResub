@@ -142,7 +142,7 @@ The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Mo
 I also asked family and friends to test out the site, encouraging them to click links, navigate, register/login, purchase, add and delete items as much as possible to help find any bugs or system issues/errors that could be rectified. 
 Doing so also helped find and fine tune the UI/UX and helped with the layout of the site, specfically speaking on small screens.
 
-## E-Commerce Testing: 
+### E-Commerce Testing: 
 
 Various payments, using the example digits of 4242 4242 4242 4242 42 42, were processed to check the functionality of Stripe. As per the below report, you can see proof of many successful payments: 
 
