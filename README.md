@@ -8,7 +8,20 @@ Functionality and accessibilty varied dependant on regular user, authenticated u
 
 ## Colour Scheme: 
 
-In line with the Avengers logo and Marvel, I went for a clean Red and White scheme, which is persistent throughout the site. 
+In line with the Avengers logo and Marvel, I went for a clean Red and White scheme, which is persistent throughout the site.
+
+## Extra Information: 
+
+To have Create, Read, Update and Delete functionality, this is allowed via either User or Superuser authentication, which is purposely done to avoid anyone visiting the site to be able to affect the database. 
+To purchase something, you can also use the generic details of 4242 4242 4242 4242 42 42 in the card details section to see an example of the E-commerce aspect of the site in action. 
+
+## User Experience Design Thinking: 
+
+This site, as clearly stated above is to allow the user to purchase something that belonged to one of the Avengers - this is the core and main purpose. This was the reasoning behind all of the design thinking behind layout which is clear and is only a few clicks away from entering the page to landing on the checkout page. This is purposely done to allow efficient speed to the goal and objective of someone landing on the site. To help which this I included a clear message and mission statement to the landing page to ensure the user knows exactly what they can do on this site, to cover the basis of new users and users who know what they were looking for when finding this site. 
+
+The design of the information, text and forms is also purposefully quite streamlined - though keeping all relevant information to ensure the experience is clear, quick and enjoyable for the user too. As too much information, too little information or a messy design could deter from this.
+
+It is also made clear to the user and it is encouraging the user that you must register to be able to make purchases or have some core functionality in the site. This is important, as if you land and stay on the site, it's becuase you want to join the community, and or, purchase something - and to be able to do this you need to be a "member" as such and sign in/register. This is a key driver to doing so, and is made clear to the user in a plutonic way. 
 
 ## Stuggles: 
 
@@ -126,12 +139,20 @@ Passed through https://validator.w3.org/ without error as per below:
 ### Browser
 
 The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Modzilla - all work correctly.
+I also asked family and friends to test out the site, encouraging them to click links, navigate, register/login, purchase, add and delete items as much as possible to help find any bugs or system issues/errors that could be rectified. 
+Doing so also helped find and fine tune the UI/UX and helped with the layout of the site, specfically speaking on small screens.
+
+## E-Commerce Testing: 
+
+Various payments, using the example digits of 4242 4242 4242 4242 42 42, were processed to check the functionality of Stripe. As per the below report, you can see proof of many successful payments: 
+
+![image](https://user-images.githubusercontent.com/93741957/208946339-ae13a915-61c9-49f5-bd8e-c574e61ab417.png)
 
 ### Lighthouse Report
 
 ![image](https://user-images.githubusercontent.com/93741957/201134083-45eb19fc-8eb7-4b55-9072-8751cb1b065d.png)
 
-The results of this report are quite average, but after review, found that some of the issues bringing it down seemed off, one example being li elements not being wrapped in ul and the nav elements were highlighted, but as per the code, you can see that they are...I was stumped with this and was not sure how to rectify this. I thought that the report was not bad enough to warrant lots of investigation to resolve this
+The results of this report are quite average, but after review, found that some of the issues bringing it down seemed off, one example being li elements not being wrapped in ul and the nav elements were highlighted, but as per the code, you can see that they are...I was stumped with this and was not sure how to rectify this. I thought that the report was not bad enough to warrant lots of investigation to resolve this. 
 
 ## 404 Custom Error Page
 
@@ -149,7 +170,6 @@ Development:
 Deployment: 
 ![image](https://user-images.githubusercontent.com/93741957/202790175-9e3dc0d8-6f26-4c08-9cb2-603e4113b088.png)
 
-
 ## Deployment:
 
 This project was deployed via Heroku.
@@ -166,6 +186,7 @@ I created a respository and opened in gitpod to create my code. To move my code 
 - git add .
 - git commit -m "message"
 - git push
+- git pull --rebase
   
 ## Resources: 
 
