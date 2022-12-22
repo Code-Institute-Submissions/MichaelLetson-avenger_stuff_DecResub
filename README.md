@@ -29,7 +29,9 @@ The main struggle was the amount of moving pieces and keeping on top of all the 
 
 One main issue was an issue with a csrf token in allauth templates, this took a lot of hours to debug to find out that there was a random input field generating the same recursive token number which, for Django, was causing a security risk and was spitting out an error. 
 
-Another struggle I had was with AWS setup, there were lots of steps and I may have missed a step or two and had to redo the whole process to rectify the problem, which was the static files not loading into the bucket in AWS. 
+Another struggle I had was with AWS setup, there were lots of steps and I may have missed a step or two and had to redo the whole process to rectify the problem, which was the static files not loading into the bucket in AWS.
+
+I came across a 'checkout' issue, with a internal server error 500 message appearing. This was due to stripe secret and public keys not being in config. vars in Heroku, they were in gitpod variables which I had thought would suffice, but evidently not. This was rectified and E-Commerce element is fully functional - which can be tested using 4242 4242 4242... recurring. 
 
 ## Future Expansion: 
 
