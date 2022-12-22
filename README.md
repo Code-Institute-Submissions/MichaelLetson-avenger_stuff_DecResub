@@ -126,7 +126,11 @@ Implemented a simple section in the About section of the site, to allow users to
 
 Implemented an area in the About section to allow for a community feel of communication on the site directly, this is mainly for people to post their reviews on the items they have purchased, or related topics. Though it is kept relaxed and flexible to try and encourage a forum styled area for people to come and join the conversation of all things related to the Avengers and their "Stuff" - this encourages people to get involved, stay involved and ultimately spend more time on the site which will promote purchases and/or people to go and find items to post on the site. 
 
-## Testing: 
+## Testing:
+
+### Heroku Database
+
+New information regarding Heroku's database policy changes came about following initial and secondary submittion. Leading to errors on many pages that rely on sound database storage and connectivity. To resolve, I migrated the local database into ElephantSQL and ensured the App used this database URL rather than the local one. I then referrenced the elephantsql URL in the Heroku/Gitpod variables to ensure the site worked with the datbase correctly. To check this worked, it was simple - via the local and deployed site, I navigated to the pages that required use of the database and when no Internal Error messages appeared, I knew things worked and the app was ready for stress testing and further manual tests to ensure links and functionality all worked correctly. 
 
 ### Python
 
@@ -180,6 +184,18 @@ This project was deployed via Heroku.
 - Set buildbacks to Django and AWS. 
 - Link Heroku to Git repository.
 - Deployed.
+
+Essential packages installed/used for this app. Are as follows:
+
+- Allauth
+- Stripe
+- AWS Wire up
+- ElephantSQL 
+- Pillow
+- Boto3
+- Gunicorn
+
+Environment variables for AWS/Static, ElephantSQL and Stripe are stored in Heroku Config. Vars or Gitpod variables area. Not copied in README for security. 
 
 ## Using Git: 
 
