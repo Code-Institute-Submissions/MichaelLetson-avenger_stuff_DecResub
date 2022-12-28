@@ -4,7 +4,9 @@ Avenger Stuff lives inside the MCU - it's purpose: "When the battlefield has cle
 
 This site is intended to be fun, and placed inside a make believe world of Marvel. It is to enable people to purchase items/weapons/clothing that once belonged to an Avenger. 
 
-Functionality and accessibilty varied dependant on regular user, authenticated user and superuser. There is a difference, to try and entice people to become a user and join in conversations and have more access in the site. While having a superuser with full access and some access others don't to try and uphold good security (though this is something I feel could be developed further for better relevance and user experience too - for example, an author being able to edit their own product without the help of the superuser/site owner.
+Functionality and accessibilty varied dependant on regular user, authenticated user and superuser. There is a difference, to try and entice people to become a user and join in conversations and have more access in the site. While having a superuser with full access and some access others don't to try and uphold good security (though this is something I feel could be developed further for better relevance and user experience too - for example, an author being able to edit their own product without the help of the superuser/site owner).
+
+Something I chose to do was to enable non-users to post a product to the site, I did this as I wanted the main purpose for the site for people to buy Avengers stuff, and felt giving someone the opportunity to post a product might entice them to further browse and want further functionality to then sign up. This in particular could be up for review, however.
 
 ## Colour Scheme: 
 
@@ -142,6 +144,8 @@ Passed through https://validator.w3.org/ without error as per below:
 
 ![image](https://user-images.githubusercontent.com/93741957/201132204-00ce9e38-d66f-4e1a-8763-92346a67004b.png)
 
+Found error in ID duplication which was due to clashes in mobile and web browser navigation bars and their ids clashing. Once I changed the IDs to something more unique per option, this error was rectified. 
+
 ### Browser
 
 The site address avenger-stuff.herokuapp.com was trialled on Edge, Chrome and Modzilla - all work correctly.
@@ -153,6 +157,10 @@ Doing so also helped find and fine tune the UI/UX and helped with the layout of 
 Various payments, using the example digits of 4242 4242 4242 4242 42 42, were processed to check the functionality of Stripe. As per the below report, you can see proof of many successful payments: 
 
 ![image](https://user-images.githubusercontent.com/93741957/208946339-ae13a915-61c9-49f5-bd8e-c574e61ab417.png)
+
+### Security
+
+To stop people being able to access sensitive pages directly via the URL I included security into the views.py files to ensure @login_required. Which removes non-authenticated users being able to access pages they shouldn't have access to. And, also further prompts people to be an authenticated user of the site. 
 
 ### Lighthouse Report
 
