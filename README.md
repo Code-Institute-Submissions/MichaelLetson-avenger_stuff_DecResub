@@ -8,6 +8,11 @@ Functionality and accessibilty varied dependant on regular user, authenticated u
 
 Something I chose to do was to enable non-users to post a product to the site, I did this as I wanted the main purpose for the site for people to buy Avengers stuff, and felt giving someone the opportunity to post a product might entice them to further browse and want further functionality to then sign up. This in particular could be up for review, however.
 
+The above is the E-Commerce business model. The site is layed out specifcally to entice people to become a user and purchase an item. This is done via constant prompts to sign in to have better functionality, such as purchasing, and by making it seemless to do so with a quick and simple design.
+
+Note: 
+- there are no external links in this site. 3.4 in markdown critieria is not relevant. As confirmed by my mentor. 
+
 ## Colour Scheme: 
 
 In line with the Avengers logo and Marvel, I went for a clean Red and White scheme, which is persistent throughout the site.
